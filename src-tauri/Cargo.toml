@@ -18,7 +18,7 @@ tauri-build = { version = "2", features = [], optional = true }
 chrono = "0.4.42"
 
 [dependencies.neptune-privacy]
-git = "ssh://git@github.com/VxBlocks/xnt-core.git"
+git = "ssh://git@github.com/VxBlocks/vxb-xnt-core.git"
 branch = "wallet-server"
 # rev = "ef59f1b"
 default-features = false
