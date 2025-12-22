@@ -1,0 +1,40 @@
+{
+  "build": {
+    "beforeDevCommand": "yarn dev",
+    "beforeBuildCommand": "yarn build",
+    "frontendDist": "../build",
+    "devUrl": "http://localhost:3000"
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Finance",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "10.15.0"
+    },
+    "externalBin": [],
+    "linux": {
+      "deb": {
+        "depends": []
+      }
+    }
+  },
+  "productName": "XntWallet",
+  "mainBinaryName": "XntWallet",
+  "identifier": "ai.vxb.xnt.wallet",
+  "plugins": {},
+  "app": {
+    "withGlobalTauri": false,
+    "security": {
+      "csp": "default-src 'self' *.localhost 127.0.0.1 *.vxb.ai; connect-src 'self' http://127.0.0.1:* *.localhost *.vxb.ai; style-src 'self' 'unsafe-inline'"
+    },
+    "macOSPrivateApi": false
+  }
+}
